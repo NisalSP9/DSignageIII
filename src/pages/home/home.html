@@ -1,14 +1,9 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-item class="" *ngFor="let att of anArray; let idx = index">
+  <!--<div [ngStyle]="att.style" src="../../assets/img/venom.jpg"></div>-->
+  <!--<ion-input type="text"  text-right  [(ngModel)]="anArray[idx].value"></ion-input>-->
+<div class="" [ngStyle]="att.style" [innerHtml]="att.tag"></div>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+</ion-item>
+
+
+
